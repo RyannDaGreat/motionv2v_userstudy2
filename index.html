@@ -200,7 +200,44 @@
         const JSON_VALUE_B = "R";
         // ================================================================================
 
-        const shuffleMapping = {"0": {"seed": "[Seed 6227] Boat_ Move Test", "intent": "Make the boat move more to the left - change nothing else. Keep the same background and camera movement.", "option_a": "ours", "option_b": "ray"}, "1": {"seed": "[Seed 5201] Reverse Windmills", "intent": "Make the right larger windmill spin counterclockwise instead of clockwise. Leave everything else alone", "option_a": "ours", "option_b": "ray"}, "2": {"seed": "[Seed 4152] Mirror the car to the other lane and make it go faster", "intent": "Move the car into the left lane. change nothing else - same camera movement, car speed, environment etc. But now, the car should be on the left lane.", "option_a": "ray", "option_b": "ours"}, "3": {"seed": "[Seed 8184] Judge_ Walk Out", "intent": "Make the judge enter from the right of the scene, instead of the left as she does right now. Make her walk in from right to left.", "option_a": "ours", "option_b": "ray"}, "4": {"seed": "[Seed 2129] Truck Before Cab [Old]", "intent": "Make the yellow taxi slower and the green truck faster, such that the green truck appears ahead of the yellow taxi and the green truck appears earlier.", "option_a": "ours", "option_b": "ray"}};
+		const shuffleMappina = {
+  "0": {
+    seed: "[Seed 6227] Boat_ Move Test",
+    intent:
+      "Make the boat move more to the left - and make the camera reverse direction, revealing the background earlier in the video rather than later.",
+    option_a: "ours",
+    option_b: "ray",
+  },
+  "1": {
+    seed: "[Seed 5201] Reverse Windmills",
+    intent:
+      "Make the right larger windmill spin counterclockwise instead of clockwise. Leave everything else alone",
+    option_a: "ours",
+    option_b: "ray",
+  },
+  "2": {
+    seed: "[Seed 4152] Mirror the car to the other lane and make it go faster",
+    intent:
+      "Move the car into the left lane. change nothing else - same camera movement, car speed, environment etc. But now, the car should be on the left lane.",
+    option_a: "ray",
+    option_b: "ours",
+  },
+  "3": {
+    seed: "[Seed 8184] Judge_ Walk Out",
+    intent:
+      "Make the judge enter from the right of the scene, instead of the left as she does right now. Make her walk in from right to left.",
+    option_a: "ours",
+    option_b: "ray",
+  },
+  "4": {
+    seed: "[Seed 2129] Truck Before Cab [Old]",
+    intent:
+      "Make the yellow taxi slower and the green truck faster, such that the green truck appears ahead of the yellow taxi and the green truck appears earlier.",
+    option_a: "ours",
+    option_b: "ray",
+  },
+};
+
         let results = {};
 
         function createVideoContainer(idx) {
